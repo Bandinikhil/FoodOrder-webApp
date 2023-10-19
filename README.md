@@ -1,70 +1,115 @@
-# Getting Started with Create React App
+# Namaste Food
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Namaste Food is a web application designed to help you explore restaurants and enjoy your dining experience. This README will provide an overview of the project's key features, technologies used, and development practices.
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+## Development Build Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Local Server**: We utilize a local server to test and develop our application.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **HMR (Hot Module Replacement)**: HMR allows us to see the changes we make to the code in real-time without the need to reload the entire application.
 
-### `npm test`
+- **File Watching Algorithm**: Our file watching algorithm is written in C++ for efficient monitoring of file changes.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Caching**: Caching is implemented to speed up build processes, resulting in faster development builds.
 
-### `npm run build`
+- **Image Optimization**: We optimize images to ensure fast loading times and a smooth user experience.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Minification**: Our code is minified for production to reduce file sizes and improve loading times.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Bundling**: We bundle our code to combine multiple files into a single file for efficient loading.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Compression**: Our application's assets are compressed to minimize bandwidth usage.
 
-### `npm run eject`
+- **Consistent Hashing**: We employ consistent hashing for load balancing and efficient data distribution.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Code Splitting**: Code splitting is used to optimize page loading and reduce initial loading times.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Differential Bundling**: We support older browsers by providing bundles that cater to their specific requirements.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Diagnostic Error Handling**: We have robust error handling in place for efficient debugging and issue resolution.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **HTTPS**: Our application supports secure communication via HTTPS for user data protection.
 
-## Learn More
+- **Tree Shaking**: We eliminate unused code using tree shaking to optimize the application's performance.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Different Dev and Prod Bundles**: We have distinct development and production bundles to enhance the development experience.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Components
 
-### Code Splitting
+- **Header**: The header section of the application.
+  - **Logo**: The application's logo.
+  - **Nav Items**: Navigation items for easy access.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **Body**: The main content of the application.
+  - **Search**: The search feature for finding restaurants.
+  - **Restaurant Container**: A container for displaying restaurant information.
+  - **Restaurant Card**: Cards containing restaurant details.
+    - **Image**: An image representing the restaurant.
+    - **Name of Restaurant, Star Rating, Cuisine, Delivery Time**: Key information about the restaurant.
 
-### Analyzing the Bundle Size
+- **Footer**: The footer section of the application.
+  - **Copyright**: Copyright information.
+  - **Links**: Important links.
+  - **Address**: Contact address.
+  - **Contact**: Contact details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Export/Import Types
 
-### Making a Progressive Web App
+- **Default Export/Import**: 
+  - Export: `export default Component;` 
+  - Import: `import Component from "path";`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **Named Export/Import**: 
+  - Export: `export const Component;` 
+  - Import: `import {Component} from "path";`
 
-### Advanced Configuration
+## React Hooks
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- We use React Hooks, which are normal JavaScript utility functions.
+  - `useState()`: For managing state variables in our application.
+  - `useEffect()`: For handling side effects.
 
-### Deployment
+## Routing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Our application employs two types of routing in web development:
 
-### `npm run build` fails to minify
+- **Client Side Routing**: For a seamless user experience within the browser.
+- **Server Side Routing**: For navigating to different pages on the server.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Redux Toolkit
+
+We use Redux Toolkit for state management. To set it up, follow these steps:
+
+1. Install `@reduxjs/toolkit` and `react-redux`.
+2. Build our store.
+3. Connect our store to our app.
+4. Use slices (e.g., `cartSlice`) for managing state.
+5. Dispatch actions.
+6. Utilize selectors to access specific state data.
+
+## Types of Testing
+
+As developers, we perform three types of testing:
+
+- **Unit Testing**: Testing individual components or functions.
+- **Integration Testing**: Testing the interaction between different parts of the application.
+- **End-to-End Testing (E2E Testing)**: Comprehensive testing of the entire application.
+
+## Setting up Testing in Our App
+
+To set up testing in our application, follow these steps:
+
+1. Install React Testing Library.
+2. Install Jest.
+3. Install Babel dependencies.
+4. Configure Babel.
+5. Configure Parcel Config file to disable default Babel transpilation.
+6. Set up Jest using `npx jest --init`.
+7. Install the jsdom library.
+8. Install `@babel/preset-react` to make JSX work in test cases.
+9. Include `@babel/preset-react` inside your Babel config.
+10. Install `@testing-library/jest-dom`.
+
+This README provides an overview of the Namaste Food project, its key features, technologies used, and development practices. It serves as a comprehensive guide to help you understand and contribute to the project.

@@ -4,6 +4,7 @@ JustEat is a web application designed to help you explore restaurants and enjoy 
 
 ## Deployed link :-   🔗 https://justeatwebapp.netlify.app/
 
+## Screenshots
 
 ![Screenshot (110)](https://github.com/Bandinikhil/FoodOrder-webApp/assets/105233916/eb210926-d9a0-4d4f-aab0-0355145e9905)
 
@@ -13,9 +14,6 @@ JustEat is a web application designed to help you explore restaurants and enjoy 
 
 
 ![Screenshot (112)](https://github.com/Bandinikhil/FoodOrder-webApp/assets/105233916/d1c253d4-c6e5-4b7d-b35c-ffc92ee5db0c)
-
-
-
 
 
 

@@ -42,13 +42,7 @@ console.log(resInfo);
         <RestaurantCategory
           key={category?.card?.card.title}
           data={category?.card?.card}
-          // check = {index}
-         
-          // showItems={
-          //   index === showIndex ? true : false}
-          // //setShow = {()=> setShow(!show)}
-          // setShowIndex={() => setShowIndex(pre => pre === index ? -1 : index)}
-          // dummy={dummy}
+        
         showItems = {(showIndex=== index ? true : false)}
         setShowIndex={()=> setShowIndex(pre => pre === index ? -1 : index)}
         />

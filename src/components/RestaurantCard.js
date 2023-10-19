@@ -35,11 +35,6 @@ const RestaurantCard = (props) => {
   );
 };
 
-// Higher Order Component
-
-// input - RestaurantCard =>> RestaurantCardPromoted
-
-
 
 export const withPromtedLabel = (RestaurantCard)=>{
       return (props)=>{

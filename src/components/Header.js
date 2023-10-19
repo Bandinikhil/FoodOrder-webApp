@@ -1,5 +1,3 @@
-
-
 import { LOGO_URL } from "../utils/constants";
 import { useState, useContext } from "react";
 import { Link } from "react-router-dom";

@@ -1,7 +1,3 @@
-
-
-
-
 import { useDispatch } from "react-redux";
 import { addItem, removeItem } from "../utils/cartSlice";
 import { CDN_URL } from "../utils/constants";
